@@ -13,6 +13,8 @@ import androidx.annotation.Nullable;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class CustomList extends ArrayAdapter<City> {
 
@@ -48,6 +50,7 @@ public class CustomList extends ArrayAdapter<City> {
 
     }
 
+
     /**
      * this function get size of list
      * @return
@@ -80,6 +83,19 @@ public class CustomList extends ArrayAdapter<City> {
             return false;
         }
 
+    }
+
+    /**
+     * This deletes a city from the list if the city exists
+     * @param city
+     * This is a candidate city to delete
+     */
+    public void delete(City city){
+//        if (!cities.contains(city)) {
+//            throw new IllegalArgumentException();
+//        }
+//        cities.remove(city);
+        return;
     }
 
 }

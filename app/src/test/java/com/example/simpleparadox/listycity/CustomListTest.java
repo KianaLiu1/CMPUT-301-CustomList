@@ -28,7 +28,7 @@ public class CustomListTest {
 
         //test city in list
         City city = new City("Charlottetown", "Prince Edward Island");
-        list.add(city);
+        list.addCity(city);
         assertEquals(true, list.hasCity(city));
         //test city not in list
         City newCity = new City("Calgary", "Alberta");
